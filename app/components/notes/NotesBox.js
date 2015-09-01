@@ -3,8 +3,10 @@ const NoteForm = require('components/notes/NoteForm');
 
 const NoteBox = React.createClass({
   getInitialState: function () {
+    let data = JSON.parse(localStorage.getItem(this.props.localStorageKey));
+    data = data || {};
     return {
-      data: JSON.parse(localStorage.getItem(this.props.localStorageKey))
+      data
     };
   }
 

@@ -1,7 +1,7 @@
 const Note = require('components/notes/Note');
 
 const NoteList = React.createClass({
-  render: function () {
+  createNoteNodes: function () {
     const noteNodes = Object.keys(this.props.data).map(function (id) {
       const note = this.props.data[id];
       return (
@@ -10,9 +10,21 @@ const NoteList = React.createClass({
         </Note>
       );
     }.bind(this));
+    return noteNodes;
+  }
+
+, createEmptyNode: function () {
+    return (
+      <h3>No notes yet. Create one!</h3>
+    );
+  }
+
+, render: function () {
+    const noteNodes = this.createNoteNodes();
+    let contentNode = noteNodes.length ? noteNodes : this.createEmptyNode();
     return (
       <div>
-        {noteNodes}
+        {contentNode}
       </div>
     );
   }
