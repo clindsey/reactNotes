@@ -1,0 +1,33 @@
+# Numerous always-ignore extensions
+*.diff
+*.err
+*.log
+*.orig
+*.rej
+*.sass-cache
+*.swo
+*.swp
+*.vi
+*~
+
+# OS or Editor folders
+.c9
+.cache
+.DS_Store
+.project
+.settings
+.tmproj
+nbproject
+Thumbs.db
+
+# NPM packages folder
+node_modules/
+
+# output folders
+dist/
+docs/
+public/
+
+# Bower packages folder
+bower_components/
+

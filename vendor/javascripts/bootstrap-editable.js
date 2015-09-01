@@ -1,0 +1,1 @@
+../../bower_components/x-editable/dist/bootstrap3-editable/js/bootstrap-editable.js

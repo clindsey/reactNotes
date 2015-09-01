@@ -1,0 +1,15 @@
+{
+  "name": "reactNotes",
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "public"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5",
+    "commonjs": "https://gist.github.com/6786792.git",
+    "jquery": "~2.1.4",
+    "react": "~0.13.3",
+    "x-editable": "~1.5.1"
+  }
+}
